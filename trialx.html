@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+<div id="container">
+      <!--//........-->
+      <div id="name">
+          <title>Trial X</title>
+          <meta charset="windows-1252">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet"type="text/css"href="abcd.css"/>
+          <script src="aa.js" type="text/javascript"></script>
+          <script src="et.js" type="text/javascript"></script>
+            <script src="eil.js"  type="text/javascript"></script>
+
+                  </div>
+      </head>
+
+      <body>
+                   </div>
+                   </div>
+                   <div id="containerx">
+                     <p id="q">Please give tick mark on the check box/s which are not entitled with your income</p>
+                       <table border="1" align="center"id="table4">
+                         <tr>
+                           <td>Heads of Income</td>
+                           <td>Give Tick Mark<br>if not fit <br>for you</td>
+                           <td>Amount of<br> income  <br>(TK)</td>
+
+                         </tr>
+
+                         <tr>
+                           <td>Interest on Securities:u/s 22</td>
+                           <td><input type="checkbox"id="x1a" onchange="add_chk1()" /></td>
+                           <td><input type="text" id="x1b"  /></td>
+                         </tr>
+
+                         <tr>
+                           <td>1 Sonchoypotror Interest</td>
+                           <td><input type="checkbox" id="x2a" /></td>
+                           <td><input type="text" id="x2b"onkeyup="add()"  /></td>
+                           </tr>
+                           <tr>
+                             <td>2 Profit from DPS and others</td>
+                             <td><input type="checkbox" id="x3a" /></td>
+                             <td><input type="text" id="x3b"onkeyup="add()"/></td>
+
+                           </tr>
+                          <script>
+
+                     function add(){
+                               var x = document.getElementById('x3b').value;
+                               var y = document.getElementById('x2b').value;
+                               var z =parseFloat(x) + parseFloat(y);
+                                 if (!isNaN(z)) {
+                              document.getElementById('x1b').value =parseFloat(z);
+                            //  document.getElementById('m2').value =parseFloat(z);
+                               }
+                             }
+                          </script>
+                              </table>
+                              <script>
+                                    var c1=parseInt("x1c");
+                                    function tot_shift(){
+                                    var c1 = document.getElementById("x1c").value;
+                                      var re1=parseInt(c18);
+                                      if (!isNaN(re1)) {
+                                      document.getElementById('x1c').value = re1;
+                                           }
+                                    }
+
+                           function myfux(){
+                     var x=document.getElementById('containerx');
+
+                       if(x.style.display==='none'){
+                         x.style.display="block";
+                       }
+                       else{ x.style.display="none";
+                       }
+                     }
+                     </script>
+
+                             </div>
+             <button onclick="myfux()">Process</button>
+       </body>
+ </html>

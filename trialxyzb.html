@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<div id="container">
+      <!--//........-->
+      <div id="name">
+          <title>reayet trial xx</title>
+          <meta charset="windows-1252">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet"type="text/css"href="abcd.css"/>
+                  </div>
+      </head>
+      <body>
+</div>
+</div>
+<div id="containerx">
+<p id="q">Please give tick mark on the check box/s which are not entitled with your income</p>
+<table border="1" align="center"id="table4">
+<tr>
+ <td>Heads of Income</td>
+ <td>Give Tick Mark<br>if not fit <br>for you</td>
+</tr>
+<tr>
+<td>12 Total income</td>
+<td><input type="text"value="0" id="m12"onkeyup="reyat_tot()"/></td>
+</tr>
+<tr>
+<td>13 reyat total </td>
+<td><input type="text"value="0" id="m13"onkeyup="reyat_tot()"/></td>
+</tr>
+<tr>
+ <td>14 Tax rebate:u/s 44(2)(b)(as per schedule 3)</td>
+ <td><input type="text"value="0" id="m14"/></td>
+</tr>
+<script>
+      function reyat_tot() {
+            var tot_income = document.getElementById('m12').value;
+            var one_forth =(parseInt('m12'))*25 %;
+            var tot_tof_3 = document.getElementById('m13').value;
+            var rayet_final= document.getElementById('m14').value;
+          //  var countable =0;
+            if (tot_income>=60000001 && tot_tof_3>=15000001){
+                document.getElementById('m14').value=15000000;
+               }
+                 }
+             //else if (parseInt(tot_income)=60000000 ){
+                  // document.getElementById('m14').value =parseInt(one_forth);
+                  //}
+          // else if (parseInt(tot_tof_3)<=15000000 && tot_tof_3 < (parseInt(one_forth)){
+                // document.getElementById('m14').value =tot_tof_3.value;
+                   //}
+                  //  }
+          // else if (parseInt(tot_tof_3)<=15000000 && tot_tof_3 > (parseInt(one_forth)){
+                //  document.getElementById('m14').value =(parseInt(one_forth);
+                 //}
+
+
+         </script>
+</body>
+ </html>

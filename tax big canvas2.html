@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+<div id="container">
+      <!--//........-->
+      <div id="name">
+          <h4>FORM OF RETURN OF INCOME UNDER THE INCOME TAX <br></br>ORDINANCE,1984(XXXVI OF 1984) </h4>
+          <title>Income Tax Return Form 2020 </title>
+          <h1> FOR INDIVIDUAL AND OTHER TAXPAYERS <br></br>(OTHER THAN COMPANY) IT 11 GA </h1>
+          <meta charset="windows-1252">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet"type="text/css"href="abc.css"/>
+
+     </div>
+     </head>
+                <body>
+
+                  <div id="container">
+                   <label>1 Name of the Assessee </label>
+                   <input type="text" id="p1"  /><br/><br/>
+                   <label>2 National ID No (if any)</label>
+                   <input type="text" id="p2" /><br/><br/>
+                    <label>3 UTIN (if any) </label>
+                    <input type="text" id="p3"  /><br/><br/>
+                    <label>4 TIN </label>
+                    <input type="text" id="P4"  /><br/><br/>
+                    <label>5 (a) Circle </label>
+                    <input type="text" id="p5"  /><br/><br/>
+                    <label> (b)  Taxes Zone </label>
+                    <input type="text" id="p6"  /><br/><br/>
+                    <label>6 Asseaament Year </label>
+                    <input type="text" id="p7" /><br/><br/>
+                    <label>7 Residential Status: Resident/ </label>
+                    <input type="checkbox" id="p8"  />
+                    <label> Non-Resident</label>
+                    <input type="checkbox" id="p9" /><br/><br/>
+                    <label>8 Status: : Individual</label>
+                    <input type="checkbox" id="p10"  />
+                    <label>Firm</label>
+                    <input type="checkbox" id="p11"/><br/><br/>
+                    <label>Association of persons</label>
+                    <input type="checkbox" id="p13"/>
+                    <label>Hindu Undivided Family </label>
+                    <input type="checkbox" id="p14"/><br/><br/>
+                    <label>9 Name of the employer/business(where applicable) </label>
+                    <input type="text" id="p13"/><br/><br/>
+                    <label>10 Wife/Husband's Name (If assessee,please mention TIN)</label>
+                    <input type="text" id="p14"/><br/><br/>
+                    <label>11 Father's Name</label>
+                    <input type="text"id="p15"/><br/><br/>
+                    <label>12 Mother's Name </label>
+                    <input type="text" id="p16"/><br/><br/>
+                    <label>13 Date of Birth(in case of individual):</label>
+                    <input type="text" id="p17"placeholder="Day/Month/Year"/><br/><br/>
+                    <label>14 Address (a) (Present)</label>
+                    <input type="text" id="p18"/><br/><br/>
+                    <label>           (b)(Permanent)</label>
+                    <input type="text" id="p19"/><br/><br/>
+                    <label>15 Telephone:(Office/Business)</label>
+                    <input type="text" id="p20"/>
+                    <label> Telephone:(Residential)</label>
+                    <input type="text" id="p21"/><br/><br/>
+                    <label>16 VAT Registration Number(if any)</label>
+                    <input type="text" id="p22"/><br/><br/>
+
+              </div>
+                    <div id= "container">
+                    <h1> Detail income description Tofsil one (Betonadi) </h1>
+                  <script type="text/javascript">
+
+                         function sum() {
+                            var n1 = document.getElementById('n').value;
+                            var n2 = document.getElementById('n').value;
+                            var n3 = document.getElementById('n3').value;
+                            var n4 = document.getElementById('n4').value;
+                            var n5 = document.getElementById('n5').value;
+                            var n6 = document.getElementById('n6').value;
+                            var n7 = document.getElementById('n7').value;
+                            var n8 = document.getElementById('n8').value;
+                            var n9 = document.getElementById('n9').value;
+                            var n10 = document.getElementById('n10').value;
+                            var n11 = document.getElementById('n11').value;
+                            var n12 = document.getElementById('n12').value;
+                            var n13 = document.getElementById('n13').value;
+                            var n14 = document.getElementById('n14').value;
+                            var n15 = document.getElementById('n15').value;
+                            var n16 = document.getElementById('n16').value;
+                            var n17 = document.getElementById('n17').value;
+                            var n18 = document.getElementById('n18').value;
+                            var result = parseInt(nti1)+parseInt(ntk2)+parseInt(n3)+parseInt(n4)+parseInt(n5)+parseInt(n6)+parseInt(n7)+parseInt(n8)+parseInt(n9)+parseInt(n10)+parseInt(n11)+parseInt(n12)+parseInt(n13)+parseInt(n14)+parseInt(n15)+parseInt(n16)+parseInt(n17);
+
+                            if (!isNaN(result)) {
+                            document.getElementById('n8').value = result;
+                                 }
+                               }
+                               </script>
+                               </div
+                                <div id= "t1">
+                            <script type="text/javascript">
+
+
+                              function t1() {
+                                  var n1 = document.getElementById('n1').value;
+                                  var n2 = document.getElementById('n2').value;
+                                  var n3 = document.getElementById('n3').value;
+                                  var n4 = document.getElementById('n4').value;
+                                  var n5 = document.getElementById('n5').value;
+                                  var nt1=12*parseInt(n1);
+                                  var nt2=12*parseInt(n2);
+                                  var nt3=12*parseInt(n3);
+                                  var nt4=12*parseInt(n4);
+                                  var nt4x=parseInt(nt4)-24000;
+                                  var nt5=12*parseInt(n5);
+                                  var nt5x=parseInt(nt5)-180000;
+                                  var nt5y=parseInt(nt1)/2;
+                                  var nt5z=0;
+                                  if (nt5y<180000){
+                                    nt5z=nt5x;
+                                  }
+                                  else{
+                                      nt5z=nt5y;
+                                  }
+
+                                  var result = parseInt(nt1)+parseInt(nt2)+parseInt(nt3)+parseInt(nt4x)+parseInt(nt5z);
+                                  if (!isNaN(result)){
+
+                                  document.getElementById('n18').value=result;
+                               }
+                             }
+
+                             </script>
+                              </div>
+                <div id= "container">
+                <label>Basic </label>
+                <input type="text" id="n1" onkeyup="t1()"  /><br/><br/>
+                <label>Spl allowance </label>
+                <input type="text" id="n2" onkeyup="t1()"  /><br/><br/>
+                <label>Dearness  </label>
+                <input type="text" id="n3" onkeyup="t1()" /><br/><br/>
+                <label>Convence </label>
+                <input type="text" id="n4" onkeyup="t1()" /><br/><br/>
+                <label>HouseRent </label>
+                <input type="text" id="n5" onkeyup="t1()" /><br/><br/>
+                <label>Medical </label>
+                <input type="text" id="n6" onkeyup="sum()" /><br/><br/>
+                <label>PoricarokVata </label>
+                <input type="text" id="n7" onkeyup="sum()" /><br/><br/>
+                <label>Leave vata </label>
+                <input type="text" id="n8" onkeyup="sum()" /><br/><br/>
+                <label>Reward/Fee </label>
+                <input type="text" id="n9" onkeyup="sum()" /><br/><br/>
+                <label>OverTime</label>
+                <input type="text" id="n10" onkeyup="sum()" /><br/><br/>
+                <label>ExGrosia/Bonus </label>
+                <input type="text" id="n11"onkeyup="sum()" /><br/><br/>
+                <label>Others </label>
+                <input type="text" id="n12"onkeyup="sum()"/><br/><br/>
+                <label>PFContribution </label>
+                <input type="text" id="n13"onkeyup="sum()"/><br/><br/>
+                <label>PFInterest</label>
+                <input type="text" id="n14"onkeyup="sum()"/><br/><br/>
+                <label>Transport vouchar </label>
+                <input type="text" id="n15"onkeyup="sum()"/><br/><br/>
+                <label>free furnished flat </label>
+                <input type="text" id="n16"onkeyup="sum()"/><br/><br/>
+                <label>Others </label>
+                <input type="text" id="n17"onkeyup="sum()"/><br/><br/>
+                <label>Net Taxable income</label>
+                <input type="text" id="n18"onkeyup="t1()"/><br/><br/>
+
+                </div>
+      <div id="name">
+            <h1>Income from house property, Tofsil two</h1>
+              <script type="text/javascript">
+
+              var a9 = document.getElementById('a9').value;
+              var a9a = document.getElementById('a9').value;
+               function sump() {
+                        var a2 = document.getElementById('a2').value;
+                        var a3 = document.getElementById('a3').value;
+                        var a4 = document.getElementById('a4').value;
+                        var a5 = document.getElementById('a5').value;
+                        var a6 = document.getElementById('a6').value;
+                        var a7 = document.getElementById('a7').value;
+                        var a8 = document.getElementById('a8').value;
+                        var resultp =  parseInt(a2)+ parseInt(a3) + parseInt(a4)+ parseInt(a5) + parseInt(a6)+ parseInt(a7) + parseInt(a8);
+                        if (!isNaN(resultp)) {
+                          document.getElementById('a9').value = resultp;
+                          document.getElementById('a9a').value = resultp;
+                             }
+                           }
+                 var a9 = document.getElementById('a9').value;
+                 var a9a = document.getElementById('a9').value;
+                  var a10a = document.getElementById('a10').value;
+             function sux() {
+                  var a9a = document.getElementById('a9').value;
+                  var a1 = document.getElementById('a1').value;
+                  var a10a = document.getElementById('a10').value;
+                  var result9 = parseInt(a1)-parseInt(a9a);
+                  if (!isNaN(result9)) {
+                  document.getElementById('a10').value = result9;
+                         }
+                       }
+             </script>
+           </div>
+                  <div id= "container">
+                   <label>Repair </label>
+                   <input type="text" id="a2" onkeyup="sump()" /><br/><br/>
+                    <label>City tax  </label>
+                    <input type="text" id="a3" onkeyup="sump()" /><br/><br/>
+                    <label>Land Tax/Vumi kor </label>
+                    <input type="text" id="a4" onkeyup="sump()" /><br/><br/>
+                    <label>Interest on loan </label>
+                    <input type="text" id="a5" onkeyup="sump()" /><br/><br/>
+                    <label>Installment insurence </label>
+                    <input type="text" id="a6" onkeyup="sump()" /><br/><br/>
+                    <label>Reyat for non rental period </label>
+                    <input type="text" id="a7" onkeyup="sump()" /><br/><br/>
+                    <label>Others </label>
+                    <input type="text" id="a8" onkeyup="sump()" /><br/><br/>
+                    <label>Total Expense </label>
+                    <input type="text" id="a9"onkeyup="sump()"  /><br/><br/>
+                    <label>Total Expense </label>
+                    <input type="text" id="a9a"onkeyup="sux()"  /><br/><br/>
+                    <div>
+                    <label>House rent collection </label>
+                    <input type="text" id="a1"onkeyup="sux()" /><br/><br/>
+                    </div>
+                    <label>Net income from Property</label>
+                    <input type="text" id="a10" onkeyup="sux()" /><br/><br/>
+
+   </div>
+                  <div id="name">
+                      <h1>Biniog jonito kor rayat Tofsil three</h1>
+                         <script type="text/javascript">
+                              function sumt() {
+                                    var c1 = document.getElementById('c1').value;
+                                    var c2 = document.getElementById('c2').value;
+                                    var c3 = document.getElementById('c3').value;
+                                    var c4 = document.getElementById('c4').value;
+                                    var c5 = document.getElementById('c5').value;
+                                    var c6 = document.getElementById('c6').value;
+                                    var c7 = document.getElementById('c7').value;
+                                    var c8 = document.getElementById('c8').value;
+                                    var c9 = document.getElementById('c9').value;
+                                    var c10 = document.getElementById('c10').value;
+                                    var c11 = document.getElementById('c11').value;
+                                    var resultn=parseInt(c1)+parseInt(c2)+parseInt(c3)+parseInt(c4)+parseInt(c5)+parseInt(c6)+parseInt(c7)+parseInt(c8)+parseInt(c9)+parseInt(c10);
+                                 if (!isNaN(resultn)) {
+                              document.getElementById('c11').value = resultn;
+                                   }
+                                 }
+                       </script>
+                     </div>
+                       <div id="container2">
+                             <label>Life insurence installment </label>
+                             <input type="text" id="c1" onkeyup="sumt()" /><br/><br/>
+                             <label>Vobisho prappo Contribut </label>
+                             <input type="text" id="c2" onkeyup="sumt()" /><br/><br/>
+                              <label>PFContribut  </label>
+                              <input type="text" id="c3" onkeyup="sumt()" /><br/><br/>
+                              <label>Sel and office pf Contribut</label>
+                              <input type="text" id="c4" onkeyup="sumt()" /><br/><br/>
+                              <label>onumodito boisjonito Contribut </label>
+                              <input type="text" id="c5" onkeyup="sumt()" /><br/><br/>
+                              <label>Stock invest </label>
+                              <input type="text" id="c6" onkeyup="sumt()" /><br/><br/>
+                              <label>DPS Contribut </label>
+                              <input type="text" id="c7" onkeyup="sumt()" /><br/><br/>
+                              <label>Group insurence </label>
+                              <input type="text" id="c8" onkeyup="sumt()" /><br/><br/>
+                              <label>Zakat fund Contribut </label>
+                              <input type="text" id="c9" onkeyup="sumt()" /><br/><br/>
+                              <label>Others</label>
+                              <input type="text" id="c10" onkeyup="sumt()" /><br/><br/>
+                              <label>Total amount for Reyat</label>
+                              <input type="text" id="c11"  onkeyup="sumt()" /><br/><br/>
+
+                    </div>
+                <div id="name">
+                  <h1>Statement of income of the assesse <br/><br/>Statement of income during the income year ended on............. </h1>
+                     <script type="text/javascript">
+                       function tx() {
+                          var t1 = document.getElementById('t1').value;
+                          var t2 = document.getElementById('t2').value;
+                          var t3 = document.getElementById('a10a').value;
+                          var t4 = document.getElementById('t4').value;
+                          var t5 = document.getElementById('t5').value;
+                          var t6 = document.getElementById('t6').value;
+                          var t7 = document.getElementById('t7').value;
+                          var t8 = document.getElementById('t8').value;
+                          var t9 = document.getElementById('t9').value;
+                          var t10 = document.getElementById('t10').value;
+                          var t11 = document.getElementById('t11').value;
+                          var t12 = document.getElementById('t12').value;
+                          var t13 = document.getElementById('t13').value;
+                          var t14 = document.getElementById('t14').value;
+                          var t15 = document.getElementById('t15').value;
+                          var t16 = document.getElementById('t16').value;
+                          var t17 = document.getElementById('t17').value;
+                          var t18 = document.getElementById('t18').value;
+                          var a10a = document.getElementById('a10a').value;
+                          var resulttx = parseInt(t1) + parseInt(t2)+ parseInt(a10a) + parseInt(t4)+ parseInt(t5) + parseInt(t6)+ parseInt(t7) + parseInt(t8)+ parseInt(t9);
+                          if (!isNaN(resulttx)) {
+                          document.getElementById('t10').value = resulttx;
+                               }
+                             }
+                             function txx() {
+                                var t10 = document.getElementById('t10').value;
+                                var n11 = document.getElementById('n11').value;
+                                var resultt = parseInt(t10) + parseInt(t11);
+                                if (!isNaN(resultt)) {
+                                document.getElementById('t12').value = resultt;
+                                     }
+                                   }
+                           </script>
+                      </div>
+            <div id="container3">
+                       <label>1 Salaries:u/s21(as per schedule 1) </label>
+                       <input type="text" id="t1" onkeyup="tx()" /><br/><br/>
+                       <label>2 Interest on Securities:u/s 22 </label>
+                       <input type="text" id="t2" onkeyup="tx()" /><br/><br/>
+                        <label>3 Income from house property:u/s24(as per schedule 2) </label>
+                        <input type="text" id="a10a" onkeyup="sux()" /><br/><br/>
+                        <label>4 Agricultural income:u/s 26 </label>
+                        <input type="text" id="t4" onkeyup="tx()" /><br/><br/>
+                        <label>5 Income from business or profession:u/s 28  </label>
+                        <input type="text" id="t5" onkeyup="tx()" /><br/><br/>
+                        <label>6 Share of profit in a farm </label>
+                        <input type="text" id="t6" onkeyup="tx()" /><br/><br/>
+                        <label>7 Income of the spouse or minor child as applicable:u/s 33 </label>
+                        <input type="text" id="t7" onkeyup="tx()" /><br/><br/>
+                        <label>8 Capital Gains:u/s 31</label>
+                        <input type="text" id="t8" onkeyup="tx()" /><br/><br/>
+                        <label>9 Income from other source: u/s 33 </label>
+                        <input type="text" id="t9" onkeyup="tx()" /><br/><br/>
+                        <label>10 Total(serial no.1 to 9) </label>
+                        <input type="text" id="t10" onkeyup="sux()" /><br/><br/>
+                        <label>11 Foreign Income </label>
+                        <input type="text" id="t11"onkeyup="sux()" /><br/><br/>
+                        <label>12 Total Income (serial no.10 and 11)</label>
+                        <input type="number" id="t12"/><br/><br/>
+                        <label>13 Tax leviable on total income </label>
+                        <input type="number" id="t13"/><br/><br/>
+                        <label>14 Tax rebate:u/s 44(2)(b)(as per schedule 3)</label>
+                        <input type="number" id="t14"/><br/><br/>
+                        <label>15 Tax payable (difference between serial no.13 and 14)</label>
+                        <input type="number" id="t15"/><br/><br/>
+                        <label>16 Tax Payments: (a)Tax deducted/collected at source<br/><br/>(Please attach supporting documents/statement)TK.. </label>
+                        <input type="number" id="t16"/><br/><br/>
+                        <label> (b) Advance Tax u/s 64/68(Please attach challan)TK.. </label>
+                        <input type="number" id="t17"/><br/><br/>
+                        <label>(c)  Tax paid on the basis of this return(u/s 74)<br/><br/>(Please attach challan/pay order/bank draft/cheque)TK..</label>
+                        <input type="number" id="t18"/><br/><br/>
+                        <label>(d) Adjustment of Tax Refund(if any)TK...</label>
+                        <input type="number" id="t18"/><br/><br/>
+                        <label>17 Difference between serial no.15 and 16 (if any)</label>
+                        <input type="number" id="t19"/><br/><br/>
+                        <label>18 Tax exempted and Tax free income</label>
+                        <input type="number" id="t20"/><br/><br/>
+                        <label>19 Income tax  Paid in the last assessment Year</label>
+                        <input type="number" id="t21"/><br/><br/>
+
+
+                    </div>
+                   </div>
+
+                    <div>
+         <button onclick="myfun()">Print Page</button>
+         <script type="text/javascript">
+               function myfun(){
+                 window.print();
+               }
+                </script>
+                   </div>
+                   <div>
+                     <button onclick="gonextpage()">Next</button>
+                     <script type="text/javascript">
+                           function gonextpage(){
+                             window.location="destination.html";
+                             //document.write('Please Wait....<br>Redirecting page.');
+                             //setTimeout('gonextpage()',3000);
+                           }
+                            </script>
+
+                   </div>
+</body>
+</html>

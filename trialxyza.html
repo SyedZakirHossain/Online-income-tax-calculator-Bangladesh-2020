@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<div id="container">
+      <!--//........-->
+      <div id="name">
+          <title>Extra Data rayh </title>
+          <meta charset="windows-1252">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet"type="text/css"href="abcd.css"/>
+                  </div>
+      </head>
+      <body>
+                   </div>
+                   </div>
+                   <div id="containerx">
+                     <p id="q">Please give tick mark on the check box/s which are not entitled with your income</p>
+                       <table border="1" align="center"id="table4">
+                         <tr>
+                           <td>Heads of Income</td>
+                           <td>Give Tick Mark<br>if not fit <br>for you</td>
+                        </tr>
+                         <tr>
+                           <td>12 Total Income (serial no.10 and 11)</td>
+                           <td><input type="text" id="m12"  /></td>
+                          </tr>
+                         <tr>
+                           <td>13 Tax leviable on total income</td>
+                           <td><input type="text" id="m13" /></td>
+                           </tr>
+
+                         <tr>
+                           <td>14 Tax rebate:u/s 44(2)(b)(as per schedule 3)</td>
+                           <td><input type="text" id="m14"onkeyup="sum555()"/></td>
+                         </tr>
+                          <script>
+                         </script>
+                         <tr>
+                           <td>15 Tax payable (difference between serial no.13 and 14)</td>
+                           <td><input type="text"value="0" id="m15"onkeyup="sum555()" /></td>
+                         </tr>
+                         <tr>
+                           <td>16 Tax Payments: (a)Tax deducted/collected at source.</td>
+                           <td><input type="text"value="0" id="m16"onkeyup="sum666()"  /></td>
+                         </tr>
+                         <tr>
+                           <td>17 Difference between serial no.15 and 16 (if any)</td>
+                           <td><input type="text"value="0" id="m17" onkeyup="sum666()" /></td>
+                         </tr>
+                         <tr>
+                              </table>
+
+    <script type="text/javascript">
+    m12.onchange=function () {
+    var lonn = document.getElementById("m12");
+    //var skattUt = document.getElementById("skattUt");
+    var prodeo_kor = document.getElementById("m13");
+    //var result = 0;
+    if(lonn.value >=1 && lonn.value <=300000 ){
+    result = lonn.value * 0;
+    }
+    else if(lonn.value >=300001 && lonn.value <=400000 ){
+    result = (lonn.value  - 300000) *.05;
+    }
+    else if(lonn.value  >= 400001 && lonn.value  <=700000){
+    result = (lonn.value  - 400000) *.10 + 5000 ;
+    }
+    else if( lonn.value  >=700001 && lonn.value  <=1100000){
+    result= (lonn.value  - 700000) * .15 + 5000 + 30000;
+    }
+    else if(lonn.value  >=1100001 && lonn.value  <=1600000 ){
+    result = (lonn.value  - 1100000) * .20 + 35000 + 60000;
+    }
+    else if(lonn.value  >=1600001 ){
+    result = (lonn.value - 1600000) * .25 + 35000 + 60000+100000;
+    }
+    //skattUt.innerHTML = "Nana You should pay taxes with the amount of: " + result + "";
+    if (document.getElementById('m12').onchange=true){
+     document.getElementById('m13').value =result;
+     }
+         }
+   function sum555() {
+          var nx1 = document.getElementById('m13').value;
+          var nx2 = document.getElementById('m14').value;
+          var nx3 = document.getElementById('m15').value;
+          var result = parseInt(nx1) - parseInt(nx2) ;
+          if (!isNaN(result)) {
+          document.getElementById('m15').value = result;
+               }
+             }
+
+   function sum666() {
+          var nx1 = document.getElementById('m15').value;
+          var nx2 = document.getElementById('m16').value;
+          var nx3 = document.getElementById('m17').value;
+          var result = parseInt(nx1) - parseInt(nx2) ;
+          if (!isNaN(result)) {
+          document.getElementById('m17').value = result;
+               }
+             }
+         </script>
+  </div>
+       </body>
+       <!--script>
+     </script>
+      <script>
+     function add_intrst(){
+              var b3 = document.getElementById('x2c').value;
+              var a3 = document.getElementById('x2b').value;
+              var a3 =parseFloat(a3);
+              var x=25000;
+              var y=25001;
+              var b3=00000;
+                   if (parseFloat(a3)<=x){
+              document.getElementById('x2c').value =b3;
+                     }
+                     if (parseFloat(a3)>=y){
+                         document.getElementById('x2c').value = (parseFloat(a3)-x);
+                           }
+                        }
+         </script-->
+ </html>
