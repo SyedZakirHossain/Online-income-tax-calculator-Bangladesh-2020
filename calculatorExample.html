@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta name="description" content="Soft Ray">
+     <meta name="author" content="Rayhan">
+     <title>Tax Calculator</title>
+   </head>
+<body>
+    <input type="text" id="lonn"  />
+    <button id="knapp">Calculate tax!</button>
+    <h2 id="lonnUt"></h2>
+    <h2 id="skattUt"></h2>
+
+<script>
+var knapp = document.getElementById("knapp");
+
+knapp.onclick = function() {
+    var lonn = document.getElementById("lonn");
+    var lonnUt = document.getElementById("lonnUt");
+    var skattUt = document.getElementById("skattUt");
+    var result = 0;
+    if(lonn.value >=1 && lonn.value <=300000 ){
+    result = lonn.value * 0;
+    }
+    else if(lonn.value >=300001 && lonn.value <=400000 ){
+    result = (lonn.value  - 300000) *.05;
+    }
+    else if(lonn.value  >= 400001 && lonn.value  <=700000){
+      result = (lonn.value  - 400000) *.10 + 5000 ;
+    }
+    else if( lonn.value  >=700001 && lonn.value  <=1100000){
+    result= (lonn.value  - 700000) * .15 + 5000 + 30000;
+    }
+    else if(lonn.value  >=1100001 && lonn.value  <=1600000 ){
+    result = (lonn.value  - 1100000) * .20 + 35000 + 60000;
+    }
+    else if(lonn.value  >=1600001 ){
+    result = (lonn.value - 1600000) * .25 + 35000 + 60000+100000;
+    }
+
+    lonnUt.innerHTML = ("Your taxable income is BDT: " + lonn.value + "");
+    skattUt.innerHTML = "You should pay taxes with the amount of: " + result + "";
+}</script>
+</body>
+</html>
