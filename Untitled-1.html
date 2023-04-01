@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+      <head>
+          <title> Counter</title>
+          <script  src="2txtbox.js"></script>
+          <script  >
+              document.addEventListener('DOMContentLoaded',function(){
+                  document.querySelector('form').onsubmit=function(){
+                     const name = document.querySelector('#name').value;
+                     alert(`Hello,${name}!`);
+                };
+              });
+          </script>   
+          
+      </head>
+  <body>
+      <h2>Hello</h2>
+      <h1 align='center'>0</h1>
+      <button id="btn1" onclick="count()"> Count</button>      
+      <button id="btn2" onclick="hello()"> show hello</button>     
+<form>
+<input autofocus id= "name" placeholder="Name" type="text">   
+<input type= "submit">
+
+</form>
+       </body>
+ </html>

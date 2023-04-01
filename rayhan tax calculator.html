@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta name="description" content="Soft Ray">
+     <meta name="author" content="Rayhan">
+     <title>Azim Nanar Tax Calculator</title>
+   </head>
+<body>
+    <h2 >আপনার ট্যাক্সেবল ইনকাম সংখাটি নিচের বক্সে ইনপুট দিন। </h2>
+    <input type="text" id="taxable"  />
+    <button id="btn">Calculate tax!</button>
+    <h2 id="taxableOut"></h2>
+    <h2 id="resultOut"></h2>
+
+<script>
+var btn = document.getElementById("btn");
+
+btn.onclick = function() {
+    var tax = document.getElementById("taxable");
+    var taxableOut = document.getElementById("taxableOut");
+    var resultOut = document.getElementById("resultOut");
+    var result = 0;
+    if(taxable.value >=1 && taxable.value <=300000 ){
+    result = taxable.value * 0;
+    }
+    else if(taxable.value >=300001 && taxable.value <=400000 ){
+    result = (taxable.value  - 300000) *.05;
+    }
+    else if(taxable.value  >= 400001 && taxable.value  <=700000){
+      result = (taxable.value  - 400000) *.10 + 5000 ;
+    }
+    else if( taxable.value  >=700001 && taxable.value  <=1100000){
+    result= (taxable.value  - 700000) * .15 + 5000 + 30000;
+    }
+    else if(taxable.value  >=1100001 && taxable.value  <=1600000 ){
+    result = (taxable.value  - 1100000) * .20 + 35000 + 60000;
+    }
+    else if(taxable.value  >=1600001 ){
+    result = (taxable.value - 1600000) * .25 + 35000 + 60000+100000;
+    }
+
+    taxableOut.innerHTML = (" Your taxable income is BDT: " + taxable.value + "");
+    resultOut.innerHTML = " You should pay taxes with the amount of: " + result + "";
+}</script>
+</body>
+</html>

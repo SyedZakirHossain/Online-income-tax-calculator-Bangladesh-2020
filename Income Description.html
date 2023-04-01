@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+      <div id="container">
+        <h1>Income  description (IT 11 GA) </h1>
+        <title>Income  description (IT 11 GA)  </title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"type="text/css"href="ab.css"/>
+        <script type="text/javascript">
+     function sum() {
+        var n1 = document.getElementById('n1').value;
+        var n2 = document.getElementById('n2').value;
+        var n3 = document.getElementById('n3').value;
+        var n4 = document.getElementById('n4').value;
+        var n5 = document.getElementById('n5').value;
+        var n6 = document.getElementById('n6').value;
+        var n7 = document.getElementById('n7').value;
+        var n8 = document.getElementById('n8').value;
+        var n9 = document.getElementById('n9').value;
+        var n10 = document.getElementById('n10').value;
+        var n11 = document.getElementById('n11').value;
+        var n12 = document.getElementById('n12').value;
+        var n13 = document.getElementById('n13').value;
+        var n14 = document.getElementById('n14').value;
+        var n15 = document.getElementById('n15').value;
+        var n16 = document.getElementById('n16').value;
+        var n17 = document.getElementById('n17').value;
+        var n18 = document.getElementById('n18').value;
+        var result = parseInt(n1) + parseInt(n2)+ parseInt(n3) + parseInt(n4)+ parseInt(n5) + parseInt(n6)+ parseInt(n7) + parseInt(n8)+ parseInt(n9);
+        if (!isNaN(result)) {
+        document.getElementById('n10').value = result;
+             }
+           }
+           function sux() {
+              var n10 = document.getElementById('n10').value;
+              var n11 = document.getElementById('n11').value;
+              var result = parseInt(n10) + parseInt(n11);
+              if (!isNaN(result)) {
+              document.getElementById('n12').value = result;
+                   }
+                 }
+         </script>
+       </div>
+    </head>
+    <body>
+        <div id="container2">
+       <label>Salary </label>
+       <input type="text" id="n1" onkeyup="sum()" /><br/><br/>
+       <label>Deposit interest </label>
+       <input type="text" id="n2" onkeyup="sum()" /><br/><br/>
+        <label>Home property income (Tofsil 2) </label>
+        <input type="text" id="n3" onkeyup="sum()" /><br/><br/>
+        <label>Agri Income </label>
+        <input type="text" id="n4" onkeyup="sum()" /><br/><br/>
+        <label>Business or professional Income </label>
+        <input type="text" id="n5" onkeyup="sum()" /><br/><br/>
+        <label>Farm income </label>
+        <input type="text" id="n6" onkeyup="sum()" /><br/><br/>
+        <label>Spouse Income </label>
+        <input type="text" id="n7" onkeyup="sum()" /><br/><br/>
+        <label>Capital Gain</label>
+        <input type="text" id="n8" onkeyup="sum()" /><br/><br/>
+        <label>Others Income </label>
+        <input type="text" id="n9" onkeyup="sum()" /><br/><br/>
+        <label>Total 1 to 9</label>
+        <input type="text" id="n10" onkeyup="sux()" /><br/><br/>
+        <label>Foreign Income </label>
+        <input type="text" id="n11"onkeyup="sux()" /><br/><br/>
+        <label>Total Income 10 + 11</label>
+        <input type="number" id="n12"/><br/><br/>
+        <label>Imposed Tax </label>
+        <input type="number" id="n13"/><br/><br/>
+        <label>Kor Reyaet (Tofsil 3)</label>
+        <input type="number" id="n14"/><br/><br/>
+        <label>Tax To Be Paid</label>
+        <input type="number" id="n15"/><br/><br/>
+        <label>Already paid Tax -Utsay Kor </label>
+        <input type="number" id="n16"/><br/><br/>
+        <label>Advance Paid Tax </label>
+        <input type="number" id="n17"/><br/><br/>
+        <label>paid Tax based on This Return</label>
+        <input type="number" id="n18"/><br/><br/>
+        <label>sl15 vs Sl 16</label>
+        <input type="number" id="n19"/><br/><br/>
+        <label>Amount  of Tax Free Income</label>
+        <input type="number" id="n20"/><br/><br/>
+        <label>Tax Amount Paid On Previous Year</label>
+        <input type="number" id="n21"/><br/><br/>
+
+</div>
+    </body>
+</html>

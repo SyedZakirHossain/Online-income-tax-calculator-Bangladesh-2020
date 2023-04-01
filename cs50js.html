@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+      <head>
+          <title> Colors</title>
+          <!--script  src="2txtbox.js"></script-->
+          <script  >
+              document.addEventListener('DOMContentLoaded',function(){
+                  document.querySelectorAll('button').forEach(function(button){
+                      button.onclick=function(){
+                        document.querySelector('#hello').style.color=button.dataset.color;
+                      }
+                     
+                     
+                });
+              });
+          </script>   
+          
+      </head>
+  <body>
+      <h1 id="hello">Hello</h1>
+     
+      <button data-color="red" > Red</button>      
+      <button data-color="yellow" > Yellow</button>
+      <button data-color="blue" > Blue</button>     
+<form>
+
+</form>
+       </body>
+ </html>

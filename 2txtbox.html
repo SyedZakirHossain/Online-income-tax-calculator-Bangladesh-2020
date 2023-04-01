@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+      <head>
+
+      </head>
+  <body>
+          <div style="border:1px solid gray;width: 450px; height:300px">
+                 <h2 id="hh">Add three textbox values without pressing anybuttons</h2>
+                 <input type="text" id="n1" placeholder="pleaseenterFirst big Number" onkeyup="sux()" /><br/><br/>
+                  <input type="text" id="n2" placeholder="pleaseenterSecond Number" onkeyup="sux()" /><br/><br/>
+                  <input type="text" id="n3" placeholder="result" onkeyup="sux()" /><br/><br/>
+                  <br />
+                  <!--div style="padding-top:10px">
+                       Result:
+                         <input type="text" id="txtResult" /-->
+
+                     </div></div>
+           <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+                <script type="text/javascript">
+                   function sux() {
+                    var n1 = document.getElementById('n1').value;
+                    var n2 = document.getElementById('n2').value;
+                    var n3 = document.getElementById('n3').value;
+                    var result = parseInt(n1) - parseInt(n2) ;
+                    if (!isNaN(result)) {
+                    document.getElementById('n3').value = result;
+                         }
+                       }
+                   </script>
+
+       </body>
+ </html>

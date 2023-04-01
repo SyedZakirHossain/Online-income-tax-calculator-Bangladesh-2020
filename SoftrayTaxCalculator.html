@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta name="description" content="Soft Ray">
+     <meta name="author" content="Rayhan">
+     <title>Taxes</title>
+   </head>
+<body>
+    <input type="text" id="lonn" value="0" />
+    <button id="knapp">Calculate tax!</button>
+    <h2 id="lonnUt"></h2>
+    <h2 id="skattUt"></h2>
+
+<script>
+var knapp = document.getElementById("knapp");
+
+knapp.onclick = function() {
+
+    var lonn = document.getElementById("lonn");
+
+    var lonnUt = document.getElementById("lonnUt");
+    var skattUt = document.getElementById("skattUt");
+
+    var result = 0;
+
+    if(lonn.value<450000) {
+        result = lonn.value * .28;
+    }
+    else {
+        result = lonn.value * .32;
+    }
+
+    lonnUt.innerHTML = ("Your taxable income is BDT: " + lonn.value + "");
+    skattUt.innerHTML = "You should pay taxes with the amount of: " + result + "";
+}</script>
+</body>
+</html>

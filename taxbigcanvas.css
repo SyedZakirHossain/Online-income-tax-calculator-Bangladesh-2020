@@ -1,0 +1,35 @@
+
+#name{
+background-color: #66ffff;
+color: blue;
+text-align: center;
+}
+#container{
+background-color: #aabbff;
+color: red;
+text-align: center;
+}
+#container0{
+width: 500px;
+
+}
+#container1{
+background-color: #aaffbb;
+color: red;
+text-align: center;
+}
+#container2{
+background-color: #66ffff;
+color: black;
+text-align: center;
+}
+#container3{
+background-color: #bbffff;
+color: black;
+text-align: center;
+}
+label{
+  width:240px;
+  display:inline-block;
+  text-align: right;
+}

@@ -1,0 +1,15 @@
+#container{
+background-color: #66ffff;
+color: red;
+text-align: center;
+}
+#container1{
+background-color: #66ffff;
+color: red;
+text-align: center;
+}
+label{
+  width:400px;
+  display:inline-block;
+  text-align: right;
+}

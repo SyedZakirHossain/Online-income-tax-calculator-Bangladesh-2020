@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+   <head>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+     <meta charset="utf-8">
+     <meta name="description" content="Soft Ray">
+     <meta name="author" content="Rayhan">
+     <title>Azim Nanar Tax Calculator</title>
+     <link rel="stylesheet" href="rayhan2.css"/>
+   </head>
+<body>
+  <div class="alert alert-primary" role="alert">
+    <div id="container">
+      <div id="header">
+
+      <h2 id="k" >আপনার ট্যাক্সেবল ইনকাম সংখাটি নিচের বক্সে ইনপুট দিন। </h2>
+     </div>
+     <div>
+    <input type="text" id="lonn"  />
+    <input type="text" id="x"  />
+    </div>
+    <div>
+      <button type="button" class="btn btn-success">Calculate</button>
+    <!--button id="knapp">Calculate tax!</button-->
+    </div>
+    <div>
+    <h2 id="lonnUt"></h2>
+
+    <h2 id="skattUt"></h2>
+   </div>
+   <div class="dropdown">
+     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       Dropdown
+     </button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenu2"align="center">
+       <button class="dropdown-item" type="button">Action</button>
+       <button class="dropdown-item" type="button">Another action</button>
+       <button class="dropdown-item" type="button">Something else here</button>
+     </div>
+   </div>
+   <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+<form class="form-inline">
+  <label class="sr-only" for="inlineFormInputName2">Name</label>
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+  <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+  <div class="input-group mb-2 mr-sm-2">
+    <div class="input-group-prepend">
+      <div class="input-group-text">@</div>
+    </div>
+    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+  </div>
+
+  <div class="form-check mb-2 mr-sm-2">
+    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+    <label class="form-check-label" for="inlineFormCheck">
+      Remember me
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+
+<script>
+var x = document.getElementById("x");
+
+lonn.onchange=function() {
+    var lonn = document.getElementById("lonn");
+    var lonnUt = document.getElementById("lonnUt");
+    var skattUt = document.getElementById("skattUt");
+    var x = document.getElementById("x");
+    var result = 0;
+    if(lonn.value >=1 && lonn.value <=300000 ){
+    result = lonn.value * 0;
+    }
+    else if(lonn.value >=300001 && lonn.value <=400000 ){
+    result = (lonn.value  - 300000) *.05;
+    }
+    else if(lonn.value  >= 400001 && lonn.value  <=700000){
+      result = (lonn.value  - 400000) *.10 + 5000 ;
+    }
+    else if( lonn.value  >=700001 && lonn.value  <=1100000){
+    result= (lonn.value  - 700000) * .15 + 5000 + 30000;
+    }
+    else if(lonn.value  >=1100001 && lonn.value  <=1600000 ){
+    result = (lonn.value  - 1100000) * .20 + 35000 + 60000;
+    }
+    else if(lonn.value  >=1600001 ){
+    result = (lonn.value - 1600000) * .25 + 35000 + 60000+100000;
+    }
+
+    //lonnUt.innerHTML = ("Nana Your taxable income is BDT: " + lonn.value + "");
+  //  skattUt.innerHTML = "Nana You should pay taxes with the amount of: " + result + "";
+    //document.getElementById("x")=result;
+    if (document.getElementById('lonn').onchange=true){
+    // x=result;
+     document.getElementById('x').value =result;
+      }
+}
+</script>
+</body>
+</html>
