@@ -1,0 +1,40 @@
+#k{
+  border-style: solid;
+  border-color: black;
+  width:30%;
+  border-width:1px;
+  border-left-width:1px;
+  border-left-style:solid;
+  border-right-style:solid;
+}
+#s{
+  border-style: solid;
+  border-color: black;
+  width:40%;
+  border-width:1px;
+  border-left-width:1px;
+  border-left-style:solid;
+  border-right-style:solid;
+}
+#p{
+  border-style: solid;
+  border-color: black;
+  width:25%;
+  height:60%;
+  float:right;
+  border-width:1px;
+  border-left-width:1px;
+  border-left-style:solid;
+  border-right-style:solid;
+}
+#u{
+  border-style: solid;
+  border-color: black;
+  height:60%;
+  width:25%;
+  float:right;
+  border-width:1px;
+  border-left-width:1px;
+  border-left-style:solid;
+  border-right-style:solid;
+}

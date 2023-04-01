@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+<div id="container">
+      <!--//........-->
+      <div id="name">
+          <title>Statement of assets and liabilities (as on ----------)  IT-10B </title>
+          <meta charset="windows-1252">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet"type="text/css"href="abc.css"/>
+          <script src="extra_tot2.js" type="text/javascript"></script>
+          <script src="extra_tot.js" type="text/javascript"></script>
+            <script src="extra_income_list.js"  type="text/javascript"></script>
+
+                  </div>
+      </head>
+    </div>
+    </div>
+      <body>
+
+                   <div id="container">
+                     <p>Statement of assets and liabilities (as on<input type="text" id="pb1"  />)</p>
+                     <p>Please give tick mark on the check box/s which are not entitled with your income</p>
+                     <p>Name of the Assessee:<input type="text" id="pb2"   />     TIN       <input type="text" id="pb3"/></p>
+                       <table border="1" align="center"id="table4">
+                         <tr>
+                           <td>Heads of Income</td>
+                           <td>Give Tick Mark<br>if not fit <br>for you</td>
+                           <td>Description<br>of the <br>Property/Assets</td>
+                           <td>Amount in<br>Taka<br>(TK)</td>
+                         </tr>
+
+                         <tr>
+                           <td>1. (a) Business Capital (Closing balance)</td>
+                           <td><input type="checkbox"id="x1a" onchange="add_chk1()" /></td>
+                           <td><input type="text" id="x1b"  /></td>
+                           <td><input type="text" id="x1c"  /></td>
+                         </tr>
+
+                         <tr>
+                           <td>1.(b)Directors Sahreholdings in LTD Companies (at cost)</td>
+                           <td><input type="checkbox" id="x2a"placeholder="Input total amount"onchange="add_chk2()"  /></td>
+                           <td><input type="text" id="x2b"  /></td>
+                           <td><input type="text" id="x2c"  /></td>
+                         </tr>
+
+                         <tr>
+                           <td> 2. Non-Agricultural Property (at cost with legal expenses )<br>
+                                  Land/House property (Description and location of property)</td>
+                           <td><input type="checkbox" id="x3a"placeholder="Input total amount"onchange="add_chk3()"  /></td>
+                           <td><textarea rows="11" id="x3b"></textarea></td>
+                           <td><input type="text" id="x3c"  /></td>
+                         </tr>
+                         <tr>
+                           <td>3. Agricultural Property (at cost with legal expenses )<br>
+                                  Land (Total land and location of land property)</td>
+                           <td><input type="checkbox" id="x4a"placeholder="Input total amount"onchange="add_chk4()"  /></td>
+                           <td><textarea rows="11" id="x4b"></textarea></td>
+                           <td><input type="text" id="x4c"  /></td>
+                         </tr>
+                         <tr>
+                           <td>4.Investments (a) Shares/Debentures </td>
+                           <td><input type="checkbox" id="x5a"placeholder="Input total amount"onchange="add_chk5()"   /></td>
+                           <td><input type="text" id="x5b"  /></td>
+                           <td><input type="text" id="x5c"  /></td>
+                         </tr>
+                         <tr>
+                           <td>4.Investments(b) Saving Certificate/Unit Certificate/Bond</td>
+                           <td><input type="checkbox" id="x6a"placeholder="Input total amount" onchange="add_chk6()"  /></td>
+                           <td><input type="text" id="x6b"  /></td>
+                           <td><input type="text" id="x6c"  /></td>
+                         </tr>
+                         <tr>
+                           <td>4.Investments(c) Prize bond/Savings Scheme</td>
+                           <td><input type="checkbox" id="x7a"placeholder="Input total amount"onchange="add_chk7()"   /></td>
+                           <td><input type="text" id="x7b"  /></td>
+                           <td><input type="text" id="x7c"  /></td>
+                         </tr>
+                         <tr>
+                           <td>4.Investments(d) Loans given</td>
+                           <td><input type="checkbox"id="x8a"placeholder="Input total amount" onchange="add_chk8()"   /></td>
+                           <td><input type="text" id="x8b"  /></td>
+                           <td><input type="text" id="x8c"  /></td>
+                         </tr>
+                         <tr>
+                           <td>4.Investments(e) Other Investment</td>
+                           <td><input type="checkbox" id="x9a" placeholder="Input total amount"onchange="add_chk9()"   /></td>
+                           <td><input type="text" id="x9b"  /></td>
+                           <td><input type="text" id="x9c"   /></td>
+                         </tr>
+                         <tr>
+                           <td>4.Investments Total =</td>
+                           <td><input type="checkbox" id="x10a"placeholder="Input total amount"onchange="add_chk10()"   /></td>
+                           <td><input type="text" id="x10b"  /></td>
+                           <td><input type="text" id="x10c"   /></td>
+                         </tr>
+                         <tr>
+                           <td>5. Motor Vehicles (at cost) :<br>
+                                 Type of motor vehicle and Registration number</td>
+                           <td><input type="checkbox" id="x11a"placeholder="Input total amount"onchange="add_chk11()"   /></td>
+                           <td><textarea rows="6" id="x11b"></textarea></td>
+                           <td><input type="text" id="x11c"  /></td>
+                         </tr>
+
+                         <tr>
+                           <td>6. Jewellery (quantity and cost) :</td>
+                           <td><input type="checkbox"id="x12a"placeholder="Input total amount"onchange="add_chk12()"   /></td>
+                           <td><textarea rows="6" id="x12b"></textarea></td>
+                           <td><input type="text" id="x12c"  /></td>
+                         </tr>
+                         <tr>
+                           <td>7. Furniture (at cost) :<br>
+                          <td><input type="checkbox" id="x13a" onchange="add_chk13()"  /></td>
+                           <td><input type="text" id="x13b"  /></td>
+                           <td><input type="text" id="x13c"placeholder="Input total amount"   /></td>
+                         </tr>
+                         <tr>
+                           <td>8. Electronic Equipment (at cost) :<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>9. Cash Asset Outside Business:(a) Cash in hand</td>
+
+                           <td><input type="checkbox" id="x15a"onchange="add_chk15()"   /></td>
+                           <td><input type="text" id="x15b"  /></td>
+                           <td><input type="text" id="x15c"   /></td>
+                         </tr>
+                         <tr>
+                           <td>9. Cash Asset Outside Business:(b) Cash at bank</td>
+                           <td><input type="checkbox" id="x16a" onchange="add_chk16()"/></td>
+                           <td><input type="text" id="x16b"  /></td>
+                           <td><input type="text" id="x16c"   /></td>
+                         </tr>
+                         <tr>
+                           <td>9. Cash Asset Outside Business:(c) Other deposits</td>
+                           <td><input type="checkbox" id="x17a" placeholder="Input total of  all other amount"onchange="add_chk17()"    /></td>
+                           <td><input type="text" id="x17b"  /></td>
+                           <td><input type="text" id="x17c"   /></td>
+                         </tr>
+                         <tr>
+                           <td>9. Cash Asset Outside Business:Total =</td>
+                           <td><input type="checkbox" id="x17a" onchange="add_chk17()"    /></td>
+                           <td><input type="text" id="x17b"  /></td>
+                           <td><input type="text" id="x17c"placeholder="Input total of  all other amount"/></td>
+                         </tr>
+                         <tr>
+                           <td>10. Any other assets (With details)<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>11. Less Liabilities:<br>(a) Mortgages secured on property or land :</td>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>11. Less Liabilities:(b) Unsecured loans:<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>11. Less Liabilities:(c) Bank loan:<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>11. Less Liabilities:(d) Others:<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>Total Liabilities:<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>12. Net wealth as on last date of this income year<br>
+                               (Difference between total assets and total liabilities):</td>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>13. Net wealth as on last date of previous income year:<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>14. Accretion in wealth (Difference between serial no. 12 and 13):<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>15. (a) Family Expenditure: (Total expenditure as per Form IT 10 BB):<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>(b) Number of dependant children of the family::<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b" placeholder="No of Adult"   /></td>
+                           <td><input type="text" id="x14c" placeholder="No of Child" /></td>
+                         </tr>
+                         <tr>
+                           <td>16. Total Accretion of wealth (Total of serial 14 and 15):<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>17. Sources of Fund :<br>(i) Shown Return Income:</td>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>(ii) Tax exempted/Tax free Income :<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>(iii) Other receipts:<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>Total source of Fund =  :<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                         <tr>
+                           <td>18. Difference (Between serial 16 and 17):<br>
+                           <td><input type="checkbox"id="x14a" onchange="add_chk14()" /></td>
+                           <td><input type="text" id="x14b"  /></td>
+                           <td><input type="text" id="x14c" placeholder="Input total amount" /></td>
+                         </tr>
+                          <tr>
+                           <td></td>
+                           <td><input type="checkbox" id="x18a"  /></td>
+                           <td><input type="text" id="x18b"  /></td>
+                           <td><input type="text" id="x18c"onmousemove="tot18()" /></td>
+                         </tr>
+
+                              </table>
+                              <div id= "container">
+                              <p>I solemnly declare that to the best of my knowledge and belief the information
+                                 given in the IT-10B is correct and complete.</p>
+
+                               <p>  Name & signature of the Assessee:<input type="text" id="x14hhhc" placeholder="Input Signature" /></p>
+                                 <p>Date:<input type="text" id="x14hhhhhc" placeholder="Input Date" /></p>
+
+                                 <p>* Assets and liabilities of self, spouse (if she/he is not an assessee), minor
+                                             children and dependant(s) to be shown in the above statements.
+                                      * If needed, please use separate sheet.</p>
+                                      </div>
+                             </div>
+                             <div id= "container">
+                             <h3> Statement under section 75(2)(d)(i) and section 80 of the Income tax Ordinance, 1984<br>
+
+                                       (XXXVI of 1984) regarding particulars of life style </h3>
+                           <p>Name of the Assessee:<input type="text" id="pb2"   />     TIN       <input type="text" id="pb3"/></p>
+                             <table border="1"align="center" id="tablex">
+                               <tr>
+                                 <td>Serial No.</td>
+                                  <td>Particulars ofExpenditure</td>
+                                  <td>Amount of Tk.</td>
+                                  <td>Comments</td>
+                                </tr>
+                               <tr>
+                                 <td>1</td>
+                                 <td>Personal and fooding expenses</td>
+                                  <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                                  <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                 <td>Tax paid including deduction at source of the last financial year </td>
+                                 <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                                 <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                             </tr>
+                               <tr>
+                                 <td>3</td>
+                                 <td >Accommodation expenses </td>
+                                  <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                                  <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                               </tr>
+                               <tr>
+                                 <td>4</td>
+                                 <td >Transport expenses </td>
+                                  <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                                  <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                               </tr>
+                               <tr>
+                                 <td>5</td>
+                                 <td >Electricity Bill for residence</td>
+                                  <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                                  <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                               </tr>
+                               <tr>
+                                 <td>6</td>
+                                 <td >Wasa Bill for residence</td>
+                                  <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                                  <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                               </tr>
+                               <tr>
+                                 <td>7</td>
+                                 <td >Gas Bill for residence</td>
+                                  <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                                  <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                               </tr>
+                               <tr>
+                                 <td>8</td>
+                                 <td >Telephone Bill for residence</td>
+                                  <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                                  <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                               </tr>
+                               <tr>
+                               <td>9</td>
+                               <td >Education expenses for children</td>
+                                <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                                <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                             </tr>
+                             <tr>
+                             <td>10</td>
+                             <td >Personal expenses for Foreign travel</td>
+                              <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                              <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                           </tr>
+                           <tr>
+                           <td>11</td>
+                           <td >Festival and other special expenses, if any</td>
+
+                            <td><input type="text" id="v2"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                            <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                         </tr>
+                                  <tr>
+                                 <td>Total Expenditure</td>
+                                 <td><input type="text" id="v10"placeholder="Input the amount "onkeyup="sumryet()"  /> </td>
+                                 <td><input type="text" id="v2"placeholder="Input Coment "onkeyup="sumryet()"  /> </td>
+                            </tr>
+
+                           <script>
+                             function sumryet() {
+                                var f1 = document.getElementById("v1").value;
+                                var f2 = document.getElementById("v2").value;
+                                var f3 = document.getElementById("v3").value;
+                                var f4 = document.getElementById("v4").value;
+                                var f5 = document.getElementById("v5").value;
+                                var f6 = document.getElementById("v6").value;
+                                var f7 = document.getElementById("v7").value;
+                                var f8 = document.getElementById("v8").value;
+                                var f9 = document.getElementById("v9").value;
+                                var f10 = document.getElementById("v10").value;
+
+                                   var f11 = parseInt(f1)+parseInt(f2)+parseInt(f3)+parseInt(f4)+parseInt(f5)+parseInt(f6)+parseInt(f7)+parseInt(f8)+parseInt(f9)+parseInt(f10);
+                                if (!isNaN(f11)) {
+                                document.getElementById('v11').value = f11;
+
+                                     }
+                                   }
+                             </script>
+
+                             </table>
+                             </div>
+                              <div id= "container">
+                             <p>I solemnly declare that to the best of my knowledge and belief the
+                                 information given in the IT-10BB is correct and complete.<p/>
+                                </div>
+                                 <div id= "container99">
+                                                                                         <p>Name and signature<br>
+                                                                                           of the Assessee<br>
+                                                                                          Date .......................</p>
+                           </div>
+                           <div id= "container">
+                              <p>  *If needed, please use separate sheet.</p>
+                              <p>  .................................................................</p>
+                              <p>Acknowledgement Receipt of Income Statement</p>
+                               <p>Name of the Assessee:<input type="text" id="pb2"   /> Assessment Year:<input type="text" id="pb3"/></p>
+                                <p>TIN :<input type="text" id="pb2"   /> Circle:<input type="text" id="pb3"/> Taxes Zone:<input type="text" id="pb3"/></p>
+                           </div>
+                           <div id= "container">
+                             <p>Instructions to fill up the Return Form</p>
+                             <p> Instructions:
+                              (1) This return of income shall be signed and verified by the individual assessee or person as
+                              prescribed u/s 75 of the Income Tax Ordinance, 1984.
+                              (2) Enclose where applicable:
+                              (a) Salary statement for salary income; Bank statement for interest; Certificate for interest
+                              on savings instruments; Rent agreement, receipts of municipal tax and land revenue,
+                              statement of house property loan interest, insurance premium for house property
+                              income; Statement of professional income as per IT Rule-8; Copy of assessment/
+                              income statement and balance sheet for partnership income; Documents of capital
+                              gain; Dividend warrant for dividend income; Statement of other income; Documents
+                              in support of investments in savings certificates, LIP, DPS, Zakat, stock/share etc.
+                              (b) Statement of income and expenditure; ManufacturingA/C, Trading and Profit & Loss
+                              A/C and Balance sheet;
+                              (c) Depreciation chart claiming depreciation as per THIRD SCHEDULE of the Income
+                              Tax Ordinance, 1984;
+                              (d) Computation of income according to Income tax Law;
+                              (3) Enclose separate statement for:
+                              (a) Any income of the spouse of the assessee (if she/he is not an assessee), minor
+                              children and dependant;
+                              (b) Tax exempted / tax free income.
+                              (4) Fulfillment of the conditions laid down in rule-38 is mandatory for submission of a
+                              return under "Self Assessment".
+                              (5) Documents furnished to support the declaration should be signed by the assessee or
+                              his/her authorized representative.
+                              (6) The assesse shall submit his/her photograph with return after every five year.
+                              (7) Furnish the following information:
+                              (a) Name, address and TIN of the partners if the assessee is a firm;
+                              (b) Name of firm, address and TIN if the assessee is a partner;
+                              (c) Name of the company, address and TIN if the assessee is a director.
+                              (8) Assets and liabilities of self, spouse (if she/he is not an assessee), minor children and
+                              dependant(s) to be shown in the IT-10B.
+                              (9) Signature is mandatory for all the assessee or his/her authorized representative. For
+                              individual, signature is also mandatory in I.T-10B and I.T-10BB.
+                              (10) If needed, please use separate sheet. </p>
+                                                           <p></p>
+
+                               <p><br>
+                                  </p>
+                          </div>
+                            <div id= "container">
+                              <p></p>
+                              <p>  .................................................................</p>
+                              <p></p>
+                               <p>Total income shown in Return: Tk:<input type="text" id="pb2"   /> Tax paid: Tk<input type="text" id="pb3"/></p>
+                               <p>Net Wealth of Assessee : Tk<input type="text" id="pb2"   /></p>
+                                <p>Date of receipt of return:<input type="text" id="pb2"   />Serial No. in return register<input type="text" id="pb3"/></p>
+                                <p> Nature of Return :[Self] [Universal Self] [Normal]  </p>
+                                <p>Signature of Receiving<br>
+                                   officer with seal</p>
+                           </div>
+                           <div>
+                <button onclick="myfun()">Print Page</button>
+
+                <script type="text/javascript">
+                 //<span></span><button onclick="gonextpage()">Next</button>
+                      function myfun(){
+                        window.print();
+                      }
+                       </script>
+                          </div>
+                          <br><br>
+
+                          <div>
+       </body>
+ </html>

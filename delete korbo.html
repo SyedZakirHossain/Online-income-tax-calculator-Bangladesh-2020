@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+<title>  rrrrrrr  </title>
+
+        </head>
+<body>
+  <table border="1" align="center" id="table10">
+<tr>
+  <td>1</td>
+  <td> Salaries:u/s21(as per schedule 1)</td>
+  <td><input type="text" id="m1"onkeyup="sumxy()" /></td>
+</tr><br><br>
+<tr>
+  <td>Sl 2</td>
+  <td>2 Interest on Securities:u/s 22 </td>
+  <td><input type="text" id="m2"onkeyup="sumxy()" /></td>
+</tr><br><br>
+
+<tr>
+  <td>3</td>
+  <td>  Income from house property:u/s24(as per schedule 2) </td>
+  <td><input type="text" id="m3"onkeyup="sumxy()"/></td>
+</tr><br><br>
+<tr>
+  <td>4</td>
+  <td>Agricultural income:u/s 26 </td>
+  <td><input type="text" id="m4"onmousemove="sumxy()"/></td>
+</tr><br><br>
+<tr>
+  <td>5</td>
+  <td> Income from business or profession:u/s 28 </td>
+  <td><input type="text" id="m5"onkeyup="sumxy()"/></td>
+</tr><br><br>
+<tr>
+  <td>6</td>
+  <td>  Share of profit in a farm</td>
+  <td><input type="text" id="m6"onkeyup="sumxy()"/></td>
+</tr><br><br>
+<tr>
+  <td>7</td>
+  <td> Income of the spouse or minor child as applicable:u/s 33 </td>
+  <td><input type="text" id="m7"onkeyup="sumxy()"/></td>
+</tr><br><br>
+<tr>
+  <td>8</td>
+  <td>Capital Gains:u/s 31</td>
+  <td><input type="text" id="m8"onkeyup="sumxy()"/></td>
+</tr><br><br>
+<tr>
+  <td>9</td>
+  <td>Income from other source: u/s 33  </td>
+  <td><input type="text" id="m9"onkeyup="sumxy()"/></td>
+</tr><br><br>
+<tr>
+  <td>10</td>
+  <td>Total(serial no.1 to 9) </td>
+  <td><input type="text" id="m10"onkeyup="sumxy()" /></td>
+</tr>
+<script>
+  function sumxy() {
+     var z1 = document.getElementById("m1").value;
+     var z2 = document.getElementById("m2").value;
+     var z3 = document.getElementById("m3").value;
+     var z4 = document.getElementById("m4").value;
+     var z5 = document.getElementById("m5").value;
+     var z6 = document.getElementById("m6").value;
+     var z7 = document.getElementById("m7").value;
+     var z8 = document.getElementById("m8").value;
+     var z9 = document.getElementById("m9").value;
+     var z10 = document.getElementById("m10").value;
+
+        var result = parseInt(z1)+parseInt(z2)+parseInt(z3)+parseInt(z4)+parseInt(z5)+parseInt(z6)+parseInt(z7)+parseInt(z8)+parseInt(z9);
+     if (!isNaN(result)) {
+     document.getElementById('m10').value = result;
+
+          }
+        }
+  </script>
+     </table>
+</body>
+
+
+</html>
+
+I

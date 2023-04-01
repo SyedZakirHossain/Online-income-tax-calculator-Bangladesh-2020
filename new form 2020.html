@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet"type="text/css"href="newfile.css"/>
+     </head>
+    <body>
+      <div id="para1">
+          <table border="0" cellspacing="0"width="1200" id="table1">
+            <tr>
+              <div><td style="text-align:left;float:left;">National Board of Revenue </td></div>
+              <div style="text-align:right;float:right;"><td >IT-GHA2020</td></div>
+              </tr>
+    </table>
+<br></br>
+            <table border="0" align="center" cellspacing="0" id="table2">
+            <tr>
+              <td style="text-align:center; "><strong> Form of Return Under Income-tax Ordinance,1984 (Ord.XXXVI of 1984)</strong></td>
+            </tr>
+            </table>
+            <br></br>
+            <table border="0" cellspacing="1" id="table3">
+            <tr>
+              <td>Office Register<br>No</td>
+              <td id="k" >Applicable for Individual Taxpayers having taxable income and gross wealth not excedding tk. 4,00,000/- and tk.40,00,000/- respectively </td>
+              <td id="u" align="right">Universal Self</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+           <td id="p"align="right">Photograph of The Assessee</td>
+           <td height="120"width="110" align="right"></td>
+           </tr>
+                </table>
+                <br></br>
+             <table border="0"  id="table4">
+               <tr>
+                 <td>1. Name</td>
+             <td><input type="text" id="p4"  /></td>
+              </tr>
+              <tr>
+               <td>2.TIN</td>
+                <td><input type="text" id="p4"  /></td>
+             </tr>
+             <tr>
+               <td>3.Circle</td>
+               <td><input type="text" id="p4"/></td>
+               <td>4.Zone</td>
+               <td><input type="text" id="p4"/></td>
+              </tr>
+              <tr>
+                <td>5.Resident</td>
+                <td><input type="checkbox" id="ck1"/></td><br>
+                <td>6.Non-resident</td>
+                <td><input type="checkbox" id="ck2"/></td><br>
+                <td>7.Assessment Year</td>
+                <td><input type="text" id="p4"/></td><br>
+               </tr>
+           </table>
+           <br></br>
+            <div>
+              <table border="1"  id="table4" align="center">
+                <tr>
+                  <td>8.Present Address and<br> Mobile No.</td>
+                  <td>9.Permanent Address and<br> NID No.</td>
+                </tr>
+                <tr>
+                  <td><textarea rows="5" ></textarea></td>
+                  <td><textarea rows="5"></textarea></td>
+                </tr>
+              </table>
+                </div>
+                <br></br>
+              <table border="1"  id="table5">
+                <tr>
+                  <td>10.Taxable Income : Tk</td>
+                  <td><input type="text" id="ckx" onkeyup ="txtx()"/></td>
+                  <td>11.Gross Wealth: Tk </td>
+                  <td><input type="text" id="p4"/></td>
+                 </tr>
+                 <tr>
+                   <td>12.Amount of Tax :Tk</td>
+                   <td><input type="text" id="ckk1"/></td>
+                   <td>13.source of Income</td>
+                   <td><input type="text" id="ck2"/></td>
+                   </tr>
+                   <div>
+                   <td style="float:right;"<strong>14. Bank and Chalan No & Date"<strong></td>
+                   <td><textarea rows="4"></textarea></td><br>
+                   </div>
+                </table>
+                <br></br>
+                 <div>
+                   <script type="text/javascript">
+                   var taxable = document.getElementById("ckx");
+
+                  function txtx() {
+                       var taxx = document.getElementById("ckk1");
+
+                      var result = 0;
+                       var x ="This Form is not For You";
+                       if(ckx.value >=1 && ckx.value <=300000 ){
+                       result = ckx.value * 0;
+                       }
+                       else if(ckx.value >=300001 && ckx.value <=400000 ){
+                       result = (ckx.value  - 300000) *.05;
+                       }
+                       else if(ckx.value  >= 400001 ){
+                         result = x ;
+                       }
+                         document.getElementById('ckk1').value = parseInt(result);
+
+                   }
+                 </script>
+<table>
+
+<tr>
+  <td id="s"style="float:center;">15. Verification:I <input type="text" id="ck2"/>Father/Spouse
+    <input type="text" id="ck5"/>TIN<input type="text" id="ck8"/>
+  do solemnly declare that I am eligible for this Return form and the information given here is correct and complete.
+  I don't have any motor car and an investment in house property or in apartment in any city corporation area.
+  Date :<input type="date"placeholder="dd/mm/yyyy" id="ck7"/>Signature:<input type="text" id="ck6"/></td>
+</tr>
+
+</table>
+              </div>
+              <br></br>
+              <div>
+  <p><strong>Please show tax computation, name list of documents attached herewith and give brief description of  your wealth and liabilities overleaf.</strong></p>
+              </div>
+  <br></br>
+                <div>
+<table border="1" >
+
+<tr>
+  <td>Universal self </td>
+  <td><strong>Acknowledge Receipt</strong></td>
+  <td>Register No.</td>
+  </tr>
+  <tr>
+<td >Name:</td>
+<td> <textarea columns="2" ></textarea><id="ak2"></td>
+<td >Assessment Year:</td>
+<td ><textarea columns="2" ></textarea></td>
+  </tr>
+  <tr>
+<td >TIN:</td>
+<td ><input type="text" id="ak1"></td>
+<td>Circle:</td>
+<td><input type="text" id="ak3"/></td>
+<td>Zone:</td>
+<td><input type="text" id="ak4"></td>
+  </tr>
+  <tr>
+<td >Taxable Income TK:</td>
+<td><input type="text" id="ak1"></td>
+<td>Gross Wealth TK:</td>
+<td><input type="text" id="ak3"/></td>
+  </tr>
+  <tr>
+    <td >Amount of Tax:</td>
+    <td ><input type="text" id="ak1"></td>
+    <td>Bank/Mobile Bank:</td>
+    <td><input type="text" id="ak3"/></td>
+    <td>Challan No:</td>
+    <td><input type="text" id="ak4"></td>
+
+  </tr>
+
+
+</table>
+             </div>
+  <br></br>
+   <br></br>
+   <div>
+   <button onclick="myfun()">Print Page</button>
+   <script type="text/javascript">
+         function myfun(){
+           window.print();
+         }
+          </script>
+             </div>
+             <div>
+               <button onclick="gonextpage()">Next</button>
+               <script type="text/javascript">
+                     function gonextpage(){
+                      // window.location="Tax4.html";
+                       //document.write('Please Wait....<br>Redirecting page.');
+                       //setTimeout('gonextpage()',3000);
+                     }
+                      </script>
+
+             </div>
+
+  </body>
+
+  </html>
